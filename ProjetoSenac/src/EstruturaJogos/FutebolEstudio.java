@@ -11,14 +11,10 @@ public class FutebolEstudio {
 	Conta conta = new Conta();
 	
 	public String puxarCarta() {
-		String carta = "";
-		try {
-			String numeros[] = {"2","3","4","5","6","7","8","9","10","J","K","Q","A"};
-			Thread.sleep(2000);
-			carta = numeros[aleatorio.nextInt(12)];
-		}catch(InterruptedException ex) {
-			ex.printStackTrace();
-		}
+
+		String numeros[] = {"2","3","4","5","6","7","8","9","10","J","K","Q","A"};
+		String carta = numeros[aleatorio.nextInt(12)];
+
 		return carta;
 	}
 	
